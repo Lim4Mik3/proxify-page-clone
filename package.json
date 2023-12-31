@@ -8,6 +8,7 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
+    "linter": "npx @biomejs/biome check --apply src/",
     "typecheck": "tsc --noEmit && echo -e \"\\n\\033[32m✓ Typecheck success: No errors!\\033[0m\\n\""
   },
   "dependencies": {
@@ -15,6 +16,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.4.1",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
