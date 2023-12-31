@@ -13,7 +13,8 @@
     "test:ci": "vitest run --logHeapUsage",
     "test:coverage": "vitest run --coverage --silent",
     "linter": "npx @biomejs/biome check --apply src/",
-    "typecheck": "tsc --noEmit && echo -e \"\\n\\033[32m✓ Typecheck success: No errors!\\033[0m\\n\""
+    "typecheck": "tsc --noEmit && echo -e \"\\n\\033[32m✓ Typecheck success: No errors!\\033[0m\\n\"",
+    "prepare": "husky install"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -34,6 +35,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "happy-dom": "^12.10.3",
+    "husky": "^8.0.3",
     "postcss": "^8.4.32",
     "tailwindcss": "^3.4.0",
     "typescript": "^5.2.2",
